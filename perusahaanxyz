@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perusahaan XYZ - Ekosistem Pendidikan Terapan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+        /* Custom scroll-to-top button styling */
+        #scrollToTopBtn {
+            display: none; /* Hidden by default */
+            position: fixed; /* Fixed position */
+            bottom: 20px; /* Place at the bottom */
+            right: 20px; /* Place at the right */
+            z-index: 99; /* Ensure it's above other content */
+            border: none; /* Remove borders */
+            outline: none; /* Remove outline */
+            background-color: #3B82F6; /* Blue background */
+            color: white; /* White text */
+            cursor: pointer; /* Add a mouse pointer on hover */
+            padding: 15px; /* Some padding */
+            border-radius: 50%; /* Rounded corners */
+            font-size: 18px; /* Increase font size */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+            transition: background-color 0.3s ease; /* Smooth transition for background */
+        }
+
+        #scrollToTopBtn:hover {
+            background-color: #2563EB; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header and Navigation -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="flex items-center space-x-2 text-2xl font-bold text-blue-700">
+                <!-- Company Logo -->
+                <img src="https://media.istockphoto.com/id/1205507976/id/vektor/logo-topi-lulusan-papan-mortir-universitas.jpg?s=612x612&w=0&k=20&c=RTPIc90iXRlytD-VeHiyLW_26dZhzfUcMD-Q-XzthuM=" alt="Logo Perusahaan XYZ" class="h-20 w-20 rounded-full">
+                <span>XYZ</span>
+            </a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Beranda</a>
+                <a href="#about" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Tentang Kami</a>
+                <a href="#services" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Layanan</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-700 font-medium transition duration-300">Kontak</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 shadow-lg">
+            <a href="#home" class="block px-6 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-700 font-medium transition duration-300">Beranda</a>
+            <a href="#about" class="block px-6 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-700 font-medium transition duration-300">Tentang Kami</a>
+            <a href="#services" class="block px-6 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-700 font-medium transition duration-300">Layanan</a>
+            <a href="#contact" class="block px-6 py-2 text-gray-600 hover:bg-blue-100 hover:text-blue-700 font-medium transition duration-300">Kontak</a>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- Padding top to account for fixed header -->
+
+        <!-- Home Section -->
+        <section id="home" class="relative bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 md:py-32 overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <!-- Image for Home Section: Education background -->
+                <img src="https://placehold.co/1920x1080/4299E1/FFFFFF?text=Pendidikan+Terapan+dan+Pemberdayaan+Komunitas" alt="Latar belakang pendidikan terapan dan pemberdayaan komunitas" class="w-full h-full object-cover opacity-30">
+            </div>
+            <div class="container mx-auto px-6 relative z-10 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                    Mencetak Generasi Unggul dengan Pendidikan Terapan
+                </h1>
+                <p class="text-lg md:text-xl mb-10 max-w-3xl mx-auto animate-fade-in-up">
+                    Perusahaan XYZ adalah ekosistem pendidikan terapan berbasis praktik nyata yang mengintegrasikan pelatihan keterampilan, literasi keuangan mikro, dan teknologi digital dalam skema pemberdayaan komunitas.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up">
+                    <a href="#services" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Lihat Layanan Kami
+                    </a>
+                    <a href="#contact" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">
+                        Hubungi Kami
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-700 mb-12">Tentang Kami</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-4">Latar Belakang & Misi</h3>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Perusahaan XYZ lahir dari keprihatinan terhadap krisis keterampilan di kalangan usia produktif dan ketergantungan masyarakat pada pola konsumsi. Di tengah tingginya angka pengangguran dan masalah sampah organik, XYZ hadir untuk menghadirkan solusi berbasis edukasi terapan dan pemberdayaan ekonomi masyarakat.
+                        </p>
+                        <p class="text-gray-700 leading-relaxed mb-4">
+                            Misi utama perusahaan adalah mencetak generasi yang tidak hanya cerdas, tetapi juga unggul secara keterampilan, siap kerja, dan mampu menciptakan lapangan kerja dari rumah. Salah satu terobosannya adalah program <strong>Integrated Eco Farming</strong>, yaitu sistem pertanian terpadu yang memanfaatkan sampah organik secara lebih berdaya guna.
+                        </p>
+                    </div>
+                    <div class="order-1 md:order-2">
+                        <!-- Image for About Us: Integrated Eco Farming / Community Empowerment -->
+                        <img src="https://imagedelivery.net/H6_s_Eb_ylTWnSEV3HlmYQ/9ed197e8-9c67-42b0-c002-454e6a1e1300/public" alt="Gambar Integrated Eco Farming atau pemberdayaan masyarakat" class="rounded-lg shadow-xl w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <div class="mt-16 md:mt-24 text-center">
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Filosofi Logo</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="p-6 bg-blue-50 rounded-lg shadow-md">
+                            <h4 class="text-xl font-bold text-blue-700 mb-2">Nama & Warna</h4>
+                            <p class="text-gray-700">Nama "XYZ" mencerminkan misi mencetak sumber daya manusia yang kompeten dan profesional. Warna dominan biru tua dan gradasi biru muda melambangkan kepercayaan, profesionalisme, kemajuan, dan pembaruan.</p>
+                            <!-- Image for Logo Color -->
+                           
+                        </div>
+                        <div class="p-6 bg-blue-50 rounded-lg shadow-md">
+                            <h4 class="text-xl font-bold text-blue-700 mb-2">Simbol Utama</h4>
+                            <p class="text-gray-700">Logo memiliki simbol ikonik berupa topi wisuda (graduation cap) yang melambangkan pendidikan sebagai fondasi utama dan komitmen untuk mencetak SDM unggul.</p>
+                            <!-- Image for Graduation Cap Symbol -->
+                                                    </div>
+                        <div class="p-6 bg-blue-50 rounded-lg shadow-md">
+                            <h4 class="text-xl font-bold text-blue-700 mb-2">Desain</h4>
+                            <p class="text-gray-700">Font yang modern dan tegas menggambarkan kekuatan visi, semangat inovatif, dan struktur yang profesional.</p>
+                            <!-- Image for Font Design -->
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-700 mb-12">Layanan Utama: Budidaya Pakan Ternak Inovatif</h2>
+                <p class="text-center text-gray-700 mb-12 max-w-3xl mx-auto">
+                    Perusahaan XYZ memiliki 3 unit percontohan (demplot) yang menjadi layanan utama dalam pelatihan dan produksi pakan ternak alternatif yang berkelanjutan dan bernilai ekonomis.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Service 1: Budidaya Maggot & Pakan Ternak Alternatif -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <!-- Image for Maggot Cultivation -->
+                        <img src="https://zakatsukses.org/wp-content/uploads/2022/10/Maggot.webp" alt="Gambar budidaya maggot Black Soldier Fly" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-3">Budidaya Maggot & Pakan Ternak Alternatif</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Fokus pada budidaya <strong>Black Soldier Fly (BSF)</strong>. Menggunakan limbah dapur rumah tangga sebagai media budidaya. Menghasilkan produk berupa maggot segar dan kering yang kaya protein untuk pakan unggas dan ikan.
+                            </p>
+                            <a href="#" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Budidaya Cacing & Pakan Organik -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <!-- Image for Worm Cultivation -->
+                        <img src="https://pertanian.uma.ac.id/wp-content/uploads/2023/01/cacing-tanah.jpg" alt="Gambar budidaya cacing kompos" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-3">Budidaya Cacing & Pakan Organik</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Mengembangkan budidaya cacing untuk menghasilkan biomassa cacing sebagai pakan ternak. Memanfaatkan limbah organik sebagai pakan cacing. Produk sampingan berupa kascing (bekas cacing) yang dapat dijual sebagai pupuk organik berkualitas tinggi.
+                            </p>
+                            <a href="#" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Budidaya Ulat Sutra & Pakan Alternatif Protein -->
+                    <div class="bg-white rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                        <!-- Image for Silkworm Cultivation -->
+                        <img src="https://riaupunya.com/gambar/berita/besar/ini-penjelasan-alquran-dan-sains-tentang-manfaat-ulat-sutra.jpg" alt="Gambar budidaya ulat sutra Samia ricini" class="w-full h-56 object-cover">
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold text-blue-700 mb-3">Budidaya Ulat Sutra & Pakan Alternatif Protein</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                                Budidaya ulat sutra jenis <strong>Samia ricini</strong> yang pakannya adalah daun singkong. Panen kokon ulat sutra yang dapat diolah menjadi kerajinan atau sumber protein alternatif untuk pakan ternak. Limbah daun dari sisa pakan ulat dapat diolah menjadi kompos.
+                            </p>
+                            <a href="#" class="inline-block bg-blue-600 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-700 transition duration-300">Pelajari Lebih Lanjut</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-blue-700 mb-12">Kontak Kami</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Contact Info -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Informasi Kontak</h3>
+                        <div class="space-y-4 text-gray-700">
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> <strong>Kantor Pusat:</strong> Jl. Maju Berkarya No. 123, Kota Semarang</p>
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg> <strong>Workshop & Training Center:</strong> Kawasan Industri Kreatif, Blok A5, Sukorejo, Kota Semarang</p>
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.774a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg> <strong>Telepon:</strong> (024) 123-4567</p>
+                            <p class="flex items-center"><svg class="w-6 h-6 mr-3 text-blue-600" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.94 6.412A2 2 0 002 8.108V16a2 2 0 002 2h12a2 2 0 002-2V8.108a2 2 0 00-.94-1.696L10 2.525 2.94 6.412zM4 10.5V16h12v-5.5l-6 3.25L4 10.5z" clip-rule="evenodd"></path></svg> <strong>Email:</strong> info@xyz-company.com</p>
+                        </div>
+
+                        <h3 class="text-2xl font-semibold text-gray-900 mt-10 mb-6">Peta Lokasi</h3>
+                        <div class="rounded-lg overflow-hidden shadow-xl" style="height: 400px; width: 100%;">
+                            <!-- Google Maps Embed for Semarang, Indonesia -->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15826.963495204226!2d110.40702125!3d-6.99222475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b4d8d1e0f01%3A0x4027a76e35c3c00!2sSemarang%2C%20Kota%20Semarang%2C%20Jawa%20Tengah!5e0!3m2!1sen!2sid!4v1678901234567!5m2!1sen!2sid"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Kirim Pesan Kepada Kami</h3>
+                        <form class="space-y-6 bg-blue-50 p-8 rounded-lg shadow-md">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Nama Lengkap</label>
+                                <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan nama Anda" required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Masukkan email Anda" required>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Pesan</label>
+                                <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-md hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                                    Kirim Pesan
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 Perusahaan XYZ. Hak Cipta Dilindungi Undang-Undang.</p>
+            <div class="mt-4 text-sm text-gray-400">
+                <a href="#" class="hover:text-blue-400 mx-2">Kebijakan Privasi</a> |
+                <a href="#" class="hover:text-blue-400 mx-2">Syarat & Ketentuan</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" title="Kembali ke Atas">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // JavaScript for scroll-to-top button
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
+
+        // When the user clicks on the button, scroll to the top of the document
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+</body>
+</html>
